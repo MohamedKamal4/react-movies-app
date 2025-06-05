@@ -1,0 +1,29 @@
+.fade-in {
+    animation: fancyEnter 0.9s ease-in-out forwards;
+    transform-origin: center;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+@keyframes fancyEnter {
+    0% {
+        opacity: 0;
+        transform: scale(0.6);
+        filter: blur(2px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+        filter: blur(0);
+    }
+}
+
+.boxs {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin-top: 100px;
+}

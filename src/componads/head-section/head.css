@@ -1,0 +1,120 @@
+.head {
+    width: 100vw !important;
+    height: 554px;
+    position: relative;
+    top: -65px;
+    margin-bottom: 150px;
+}
+
+.head .slide {
+    width: 100% !important;
+    height: 635px !important;
+    position: relative;
+    margin-top: unset !important;
+    margin-bottom: unset !important;
+}
+
+.head .slide::before {
+    content: "";
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), black, transparent);
+    z-index: 10000;
+}
+
+.head .slide .carousel-inner,
+.head .slide .carousel-inner .carousel-item {
+    width: 100%;
+    height: 100%
+}
+
+.head .slide .carousel-inner .carousel-item .img {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+
+.head .slide .carousel-inner .carousel-item .carousel-caption {
+    width: 100%;
+    height: 100%;
+    margin-left: -205px;
+    margin-bottom: -20px;
+    animation: left 1s ease-in-out;
+    padding-left: 180px !important;
+}
+
+@keyframes left {
+    from {
+        transform: translateX(-200px);
+    }
+}
+
+.head .slide .carousel-inner .carousel-item .carousel-caption .dis {
+    font-size: 15px;
+    height: 90px;
+    width: 400px;
+    overflow-y: hidden;
+    margin-bottom: unset !important;
+}
+
+
+.carousel-caption .show-rating .show,
+.carousel-caption .show-rating .rate {
+    font-size: 15px !important;
+    padding: 5px 30px;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.carousel-caption .show-rating .rate {
+    background-color: rgb(209, 209, 4);
+    color: black;
+}
+
+.carousel-caption .show-rating .show {
+    background-color: rgb(192, 5, 5);
+    color: white;
+}
+
+@media (max-width: 576px) {
+    .head .slide .carousel-inner .carousel-item .carousel-caption {
+        display: none !important;
+    }
+
+    .head .slide .carousel-inner .carousel-item {
+        position: relative;
+    }
+
+    .head .slide .carousel-inner .carousel-item .mini-caption {
+        position: absolute;
+        z-index: 1000000000000000000000000000 !important;
+        width: 70% !important;
+        top: 250px;
+        left: 50%;
+        height: fit-content !important;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(-50%);
+        color: white !important;
+    }
+
+    .head .slide .carousel-inner .carousel-item .mini-caption h5 {
+        font-size: 18px !important;
+    }
+
+    .head .slide .carousel-inner .carousel-item .mini-caption .dis {
+        font-size: 85% !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+
+}

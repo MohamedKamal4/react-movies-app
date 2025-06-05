@@ -1,0 +1,28 @@
+.modern-card {
+    background-color: rgba(0, 0, 0, 0.534) !important;
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    box-shadow: 0 0 15px black;
+    transition: 0.5s all;
+    height: 500px !important;
+}
+
+.modern-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #ddd;
+}
+
+.carousel {
+    margin-top: 100px !important;
+    margin-bottom: 100px !important;
+}

@@ -1,0 +1,28 @@
+footer .content ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    font-size: 25px;
+}
+
+
+@media (max-width: 991px) {
+    footer {
+        width: 100% !important;
+    }
+
+    .content h1 {
+        font-size: 15px !important;
+    }
+
+    .content h1 span {
+        font-size: 16px !important;
+    }
+
+    footer .content ul li {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,282 @@
+.poster {
+    height: 500px !important;
+    width: 1366px !important;
+    margin: auto;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    position: relative;
+    z-index: -1;
+}
+
+.poster::before {
+    content: "";
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    z-index: -10000 !important;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), black, transparent);
+}
+
+
+.x {
+    position: relative;
+    top: -111px;
+    z-index: -1000;
+}
+
+.mini-poster {
+    background-size: cover !important;
+    background-position: center !important;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px black;
+    margin-bottom: -150px;
+    margin-right: 50px;
+    transition: all 0.5s ease-in-out;
+    animation: right 1s ease-in-out;
+    position: relative;
+}
+
+.poster .content {
+    animation: left 1s ease-in-out;
+    margin-bottom: -150px;
+}
+
+.poster .content h1 {
+    font-size: 60px !important;
+}
+
+.content-two {
+    height: 400px !important;
+}
+
+.details .row {
+    width: 1366px !important;
+    margin: auto !important;
+}
+
+.content-two .more {
+    animation: right-content-two 2s ease-in-out;
+}
+
+.content-two .title {
+    animation: left-content-two 2s ease-in-out;
+}
+
+@keyframes right {
+    from {
+        transform: translateX(200px);
+    }
+}
+
+@keyframes left {
+    from {
+        transform: translateX(-200px);
+    }
+}
+
+
+@keyframes left-content-two {
+    from {
+        transform: translateX(-700px);
+    }
+}
+
+@keyframes right-content-two {
+    from {
+        transform: translateX(700px);
+    }
+}
+
+.mini-poster:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.row {
+    padding-top: 150px;
+}
+
+
+@media (max-width: 1800px) {
+    .poster {
+        width: 100% !important;
+    }
+
+
+}
+
+@media (max-width: 1100px) {
+    .poster {
+        width: 100% !important;
+    }
+
+
+}
+
+@media (max-width: 991px) {
+
+    .cast-list {
+        width: 100% !important;
+    }
+
+    .poster {
+        width: 100% !important;
+    }
+
+
+}
+
+
+@media (max-width: 800px) {
+    .mini-poster {
+        display: none !important;
+    }
+
+    .cast-list {
+        width: 100% !important;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cast-list .cast-card {
+        width: 30% !important;
+    }
+
+    .poster .content {
+        width: 100% !important;
+    }
+
+    .poster .content h1 {
+        width: 100% !important;
+        text-align: center !important;
+    }
+}
+
+@media (max-width: 620px) {
+    .about {
+        height: 1000px !important;
+        flex-direction: column;
+        padding-top: 150px !important;
+        justify-content: space-between !important;
+    }
+
+    .cast-list .cast-card {
+        width: 30% !important;
+    }
+
+    .cast-list {
+        width: 100% !important;
+    }
+
+    .about .content-two {
+        width: 100% !important;
+        height: 50% !important;
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center !important;
+        align-items: center !important;
+        flex-wrap: wrap;
+    }
+
+    .about .content-two p {
+        width: 49% !important;
+        text-align: center !important;
+    }
+
+    .about .Trailer {
+        width: 100% !important;
+        height: 50% !important;
+        margin-top: 100px;
+    }
+
+    .poster .content {
+        margin-bottom: -50px !important;
+    }
+}
+
+@media (max-width: 550px) {
+    .cast-list {
+        width: 100% !important;
+    }
+
+    .poster .content .title {
+        font-size: 30px !important;
+    }
+
+    .poster .content .dis {
+        font-size: 15px !important;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .cast-list .cast-card {
+        width: 48% !important;
+    }
+
+    .x .poster {
+        padding: 0px !important;
+    }
+
+    .poster .content {
+        padding: 20px !important;
+        height: 300px !important;
+    }
+
+    .poster .content .dis {
+        font-size: 70% !important;
+    }
+}
+
+@media (max-width: 350px) {
+    .cast-list .cast-card {
+        width: 70% !important;
+    }
+}
+
+.cast {
+    padding: 20px;
+}
+
+.cast-list {
+    display: flex;
+    flex-wrap: wrap !important;
+    height: 90%;
+    gap: 1%;
+}
+
+.cast-card {
+    width: 24%;
+    height: 150px;
+    text-align: center;
+    background: linear-gradient(to top right, rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.719));
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    box-shadow: 0 0 15px black;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.cast-card img {
+    width: 30px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+.actor-name,
+.actor-character {
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+}
+
+.about {
+    height: 800px;
+}

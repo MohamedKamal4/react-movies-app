@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  scroll-behavior: smooth !important;
+  overflow-x: hidden;
+  background: linear-gradient(to top right, rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.719)), url(./netflix-background-9.jpg);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100vw !important;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.now-playing {
+  width: 1366px !important;
+  margin: auto !important;
+}
+
+.now-playing .carousel-inner {
+  width: 100% !important;
+}
+
+.now-playing .carousel-inner .top {
+  padding: unset !important;
+  margin: unset !important;
+  font-size: 10px !important;
+  padding: 20px !important;
+}
+
+.now-playing .carousel-inner .top h1 {
+  font-size: 1rem !important;
+  margin: unset !important;
+  padding: unset !important;
+}
+
+.slide .carousel-inner .top .link-more {
+  font-size: 1rem !important;
+  margin-right: unset !important;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: relative;
+  z-index: 5000000000 !important;
+  height: 80% !important;
+  margin-top: 100px;
+}
+
+
+@media (max-width: 500px) {
+  .now-playing .carousel-inner .top h1 {
+    font-size: 0.7rem !important;
+  }
+
+  .slide .carousel-inner .top .link-more {
+    font-size: 0.5rem !important;
+  }
+}
+
+@media (max-width: 1366px) {
+  .now-playing {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 1300px) {
+  .now-playing {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 1100px) {
+  .now-playing {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .now-playing {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .now-playing {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .now-playing {
+    width: 100% !important;
+  }
+}

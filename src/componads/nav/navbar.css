@@ -1,0 +1,173 @@
+.navbar {
+    padding: unset !important;
+    z-index: 1000;
+    width: 100% !important;
+    position: relative;
+    top: 30px;
+}
+
+@keyframes top {
+    from {
+        transform: translateY(-200px);
+    }
+}
+
+.navbar .container {
+    background-color: rgba(0, 0, 0, 0.534) !important;
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    border-radius: 10px;
+    padding: 10px 20px;
+    z-index: 1000;
+    margin: auto !important;
+    box-shadow: 0 0 15px black;
+    animation: top 1s ease-in-out;
+}
+
+
+.navbar .container .navbar-brand {
+    position: relative;
+    width: 170px;
+    overflow: hidden;
+}
+
+.navbar .container .navbar-brand .brand-name {
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    animation: left-brand-name 1.1s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    left: 40px;
+}
+
+@keyframes left-brand-name {
+    from {
+        left: -105px;
+    }
+}
+
+
+.navbar .container form.d-flex .search-bar {
+    width: 400px;
+    height: 30px;
+    background-color: transparent !important;
+    color: white;
+}
+
+.navbar .container form.d-flex .search-bar::placeholder {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: white !important;
+}
+
+.navbar .container .navbar-brand .icon-brand {
+    color: #BE123C !important;
+    font-size: 30px;
+    margin-right: 10px;
+    position: relative;
+    z-index: 1000;
+}
+
+
+.navbar .container .links {
+    position: relative;
+}
+
+
+.navbar .container .links .menu-icon {
+    color: #fff !important;
+    font-size: 30px;
+    cursor: pointer;
+
+}
+
+.navbar .container .links .navbarNavDropdown {
+    position: absolute;
+    bottom: -165px;
+    right: 0;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.644) !important;
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    box-shadow: 0 0 15px black;
+}
+
+.navbar .container .links .navbar-nav .nav-item {
+    padding: 5px 50px !important;
+}
+
+.navbar .container .links .navbar-nav .nav-item .nav-link {
+    color: white !important;
+}
+
+.navbar .container .links .navbar-nav .nav-item:hover {
+    background-color: #BE123C !important;
+}
+
+
+@media (max-width: 991px) {
+
+    .navbar .container form.d-flex .search-bar {
+        width: 300px;
+    }
+}
+
+@media (max-width:767px) {
+    .navbar .container form.d-flex .search-bar {
+        width: 100%;
+    }
+}
+
+@media (max-width:520px) {
+    .navbar .container .search {
+        width: 150px !important;
+    }
+}
+
+@media (max-width:452px) {
+    .navbar .container {
+        border-radius: unset !important;
+    }
+
+    .navbar .container .search {
+        display: none !important;
+    }
+
+    .navbar .container .links .navbarNavDropdown .navbar-nav .nav-item-search {
+        display: flex !important;
+
+    }
+
+    .navbar .container .links .navbarNavDropdown {
+        width: 300px !important;
+        bottom: -230px;
+    }
+}
+
+@media (max-width:310px) {
+    .navbar .container .navbar-brand {
+        width: 140px !important;
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+    }
+
+    .navbar .container .navbar-brand span {
+        font-size: 15px !important;
+    }
+}
+
+@media (max-width:272px) {
+    .navbar .container .navbar-brand {
+        width: 100px !important;
+    }
+
+    .navbar .container .navbar-brand span {
+        font-size: 10px !important;
+    }
+
+    .navbar .container .navbar-brand .icon-brand {
+        font-size: 25px !important;
+    }
+
+}
